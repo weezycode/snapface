@@ -4,5 +4,6 @@
     <img [src]="faceSnap.img_url" [alt]="faceSnap.title">
     <p>{{faceSnap.description}}</p>
     <p>Publié le {{faceSnap.createdAt}}</p>
+    <p *ngIf="faceSnap.location">{{faceSnap.location}}</p>
     <p><button (click)="onSnap()">{{buttonText}}</button>{{faceSnap.snaps}}</p>
 </div>

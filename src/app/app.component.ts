@@ -7,17 +7,27 @@ import { FaceSnap } from './models/face-snaps.models';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  mySnap!: FaceSnap;
+  mySnap!: FaceSnap[];
 
   ngOnInit(): void {
 
-    this.mySnap = new FaceSnap(
-      'Canon',
-      'Devenez meilleur photographe avec cette appareille',
-      new Date(),
-      "assets/img/cam_left1.jpg",
-      0,
-    );
+    this.mySnap = [
+      {
+        title: 'Canon',
+        description: 'Devenez meilleur photographe avec cette appareille',
+        createdAt: new Date(),
+        snaps: 0,
+        img_url: "/assets/img/cam_left1.jpg",
+      },
+      {
+        title: 'Voiture',
+        description: 'La plus belle voiture tout électrique',
+        createdAt: new Date(),
+        snaps: 0,
+        img_url: "/assets/img/auto.jpg",
+        location: "Allemagne",
+      }
+    ]
   }
 }
 
