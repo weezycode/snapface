@@ -1,10 +1,13 @@
-<div class="face-snap-card" [ngClass]="{ snapped:buttonText === 'UnSnap' }">
-
-    <h2> {{faceSnap.title}} </h2>
-    <img [src]="faceSnap.img_url" [alt]="faceSnap.title">
-    <p>{{faceSnap.description}}</p>
-    <p>Publié le {{faceSnap.createdAt}}</p>
-    <p *ngIf="faceSnap.location">{{faceSnap.location}}</p>
-    <p><button (click)="onSnap()">{{buttonText}}</button><span
-            [ngStyle]="{color:'rgb(0, '+ faceSnap.snaps * 255 +', 0)'}">🤌 {{faceSnap.snaps}}</span></p>
+<div class="container">
+    <div class="face-snap-card" [ngClass]="{ snapped:buttonText === 'UnSnap' }">
+        <p> {{345.25 | currency:'EUR':'code'}}</p>
+        <figcaption>{{ 0.47 | percent }}</figcaption>
+        <h2> {{faceSnap.title| titlecase}} </h2>
+        <img [src]="faceSnap.img_url" [alt]="faceSnap.title">
+        <p>{{faceSnap.description}}</p>
+        <p>Publié le {{faceSnap.createdAt | date:'d MMMM yyyy, à HH:m'}}</p>
+        <p *ngIf="faceSnap.location">{{faceSnap.location}}</p>
+        <p><button (click)="onSnap()">{{buttonText}}</button><span
+                [ngStyle]="{color:'rgb(0, '+ faceSnap.snaps * 255 +', 0)'}">🤌 {{faceSnap.snaps}}</span></p>
+    </div>
 </div>

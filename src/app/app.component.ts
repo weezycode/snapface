@@ -13,7 +13,7 @@ export class AppComponent implements OnInit {
 
     this.mySnap = [
       {
-        title: 'Canon',
+        title: 'Canon le meilleur',
         description: 'Devenez meilleur photographe avec cette appareille',
         createdAt: new Date(),
         snaps: 0,
