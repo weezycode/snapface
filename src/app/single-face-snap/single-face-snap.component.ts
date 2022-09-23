@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { FaceSnap } from '../models/face-snaps.models';
 import { FaceSnapsServices } from '../sevices/face-snaps.services';
 
@@ -35,4 +35,6 @@ export class SingleFaceSnapComponent implements OnInit {
 
 
   }
+
+
 }
