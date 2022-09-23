@@ -28,7 +28,7 @@ export class FaceSnapsServices {
         {
             id: 8,
             title: 'Ordinateur',
-            description: 'Surfez plus vite et travaollez en un clic',
+            description: 'Surfez plus vite et travaillez en un clic',
             createdAt: new Date(),
             snaps: 50,
             img_url: "/assets/img/laptop.jpg",
